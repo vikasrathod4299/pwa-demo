@@ -20,12 +20,12 @@ export default function Home() {
 
   return (
     <main className="min-h-screen h-screen p-8 bg-white">
-      <div className="text-center text-slate-800 relative top-20">
+      <div className="relative top-20 text-center text-slate-800 ">
         <p className="text-3xl w-full font-extrabold">
           <span className="italic">PMJAY </span>Hospitals
         </p>
       </div>
-      <div className="relative top-40 flex flex-col rounded-m gap-y-14 shadow-md p-4">
+      <div className="relative top-40 flex flex-col rounded-lg gap-y-14 shadow-md p-4">
         <Dropdown endpoint={"state"} setValues={setValues} />
         <Dropdown
           endpoint={"district"}
