@@ -41,7 +41,7 @@ export default function Home() {
       <div className="relative top-52">
         <Link
           href={`/hospitals?${params}`}
-          className={cn(buttonVariants(), ["w-full bg-green-800"])}
+          className={cn(buttonVariants(), ["w-full"])}
         >
           Get hospitals
         </Link>
