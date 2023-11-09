@@ -1,7 +1,7 @@
 "use client";
 import Dropdown from "@/components/Dropdown";
 import { useState } from "react";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 interface Data {
@@ -16,10 +16,8 @@ export default function Home() {
     taluka: "",
   });
 
-  const params = new URLSearchParams({ ...values });
-
   return (
-    <main className="min-h-screen h-screen bg-green-100/30 p-8 bg-white">
+    <main className="min-h-screen h-screen bg-green-100/30 p-8">
       <div className="relative top-20 text-center text-slate-800 ">
         <p className="text-3xl w-full font-normal drop-shadow-md">
           <span className="font-extrabold italic">PMJAY </span>Hospitals
@@ -40,7 +38,7 @@ export default function Home() {
       </div>
       <div className="relative top-52">
         <Link
-          href={`/hospitals?${params}`}
+          href={`/hospitals/${values.taluka}`}
           className={cn(buttonVariants(), ["w-full"])}
         >
           Get Hospitals
