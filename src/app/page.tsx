@@ -23,7 +23,7 @@ export default function Home() {
       <div className="text-center my-12">
         <p className="text-3xl w-full">PMJAY Hospitals</p>
       </div>
-      <div className="flex flex-col gap-y-14">
+      <div className="flex flex-col rounded-md mt-24 gap-y-14 shadow-md p-4">
         <Dropdown endpoint={"state"} setValues={setValues} />
         <Dropdown
           endpoint={"district"}
@@ -36,7 +36,7 @@ export default function Home() {
           setValues={setValues}
         />
       </div>
-      <div className="my-4">
+      <div className="my-12">
         <Link
           href={`/hospitals?${params}`}
           className={cn(buttonVariants(), ["w-full"])}
