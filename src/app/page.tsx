@@ -19,13 +19,13 @@ export default function Home() {
   const params = new URLSearchParams({ ...values });
 
   return (
-    <main className="min-h-screen h-screen p-8 pt-0 bg-white">
-      <div className="text-center text-slate-800 mt-28 mb-20">
+    <main className="min-h-screen h-screen p-8 bg-white">
+      <div className="text-center text-slate-800 relative top-20">
         <p className="text-3xl w-full font-extrabold">
           <span className="italic">PMJAY </span>Hospitals
         </p>
       </div>
-      <div className="flex flex-col rounded-m gap-y-14 shadow-md p-4">
+      <div className="relative top-40 flex flex-col rounded-m gap-y-14 shadow-md p-4">
         <Dropdown endpoint={"state"} setValues={setValues} />
         <Dropdown
           endpoint={"district"}
@@ -38,7 +38,7 @@ export default function Home() {
           setValues={setValues}
         />
       </div>
-      <div className="my-12">
+      <div className="relative top-52">
         <Link
           href={`/hospitals?${params}`}
           className={cn(buttonVariants(), ["w-full"])}
