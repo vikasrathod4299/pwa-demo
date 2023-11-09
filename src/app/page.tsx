@@ -21,8 +21,8 @@ export default function Home() {
   return (
     <main className="min-h-screen h-screen bg-green-100/30 p-8 bg-white">
       <div className="relative top-20 text-center text-slate-800 ">
-        <p className="text-3xl w-full font-extrabold">
-          <span className="italic">PMJAY </span>Hospitals
+        <p className="text-3xl w-full font-normal drop-shadow-md">
+          <span className="font-extrabold italic">PMJAY </span>Hospitals
         </p>
       </div>
       <div className="relative top-40 flex flex-col rounded-lg gap-y-14 bg-green-100 shadow-md p-4">
@@ -43,7 +43,7 @@ export default function Home() {
           href={`/hospitals?${params}`}
           className={cn(buttonVariants(), ["w-full"])}
         >
-          Get hospitals
+          Get Hospitals
         </Link>
       </div>
     </main>
